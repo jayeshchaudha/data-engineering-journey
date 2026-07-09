@@ -1,0 +1,285 @@
+%% ============================================================
+%%  JAYESH CHAUDHARI — DATA ENGINEER RESUME
+%%  Top 5% | ATS-Optimised | 6-Second Scan Ready
+%% ============================================================
+
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[a4paper, top=0.45in, bottom=0.45in, left=0.55in, right=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fontawesome5}
+\usepackage{parskip}
+
+%% ── Colours ─────────────────────────────────────────────────
+\definecolor{accent}{HTML}{1A56DB}
+\definecolor{darkgray}{HTML}{1F2937}
+\definecolor{midgray}{HTML}{4B5563}
+\definecolor{lightgray}{HTML}{6B7280}
+\definecolor{rulecol}{HTML}{DBEAFE}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, pdfborder={0 0 0}}
+\pagestyle{empty}
+
+%% ── Section formatting ──────────────────────────────────────
+\titleformat{\section}
+    {\large\bfseries\color{darkgray}}{}{0em}{}
+    [\vspace{-4pt}\textcolor{accent}{\rule{\linewidth}{1.2pt}}\vspace{2pt}]
+\titlespacing{\section}{0pt}{7pt}{3pt}
+
+%% ── List formatting ─────────────────────────────────────────
+\setlist[itemize]{
+    leftmargin=1.2em, itemsep=0.5pt,
+    parsep=0pt, topsep=1pt,
+    label=\textcolor{accent}{\small\textbullet}
+}
+
+%% ── Custom commands ─────────────────────────────────────────
+\newcommand{\jobentry}[4]{%
+    \noindent
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+        {\bfseries\color{darkgray} #1} \textcolor{lightgray}{|}
+        \textcolor{accent}{#2} & \textcolor{lightgray}{\small #3} \\
+        \textcolor{midgray}{\small\itshape #4} & \\
+    \end{tabularx}\vspace{2pt}
+}
+
+\newcommand{\projectentry}[3]{%
+    \noindent
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+        {\bfseries\color{darkgray} #1}
+        \textcolor{lightgray}{\small | \textit{#2}}
+        & \textcolor{accent}{\small\faGithub\
+          \href{#3}{github.com/jayeshchaudha}} \\
+    \end{tabularx}\vspace{2pt}
+}
+
+\newcommand{\certentry}[3]{%
+    \noindent{\bfseries\color{darkgray} #1}
+    \textcolor{lightgray}{|} \textcolor{midgray}{\small #2}
+    \hfill \textcolor{lightgray}{\small #3}\\[-2pt]
+}
+
+\newcommand{\skillrow}[2]{%
+    \noindent{\bfseries\color{darkgray}\small #1:}
+    \textcolor{midgray}{\small #2}\\[2pt]
+}
+
+%% ============================================================
+\begin{document}
+
+%% ── HEADER ──────────────────────────────────────────────────
+\begin{center}
+    {\Huge\bfseries\color{darkgray} Jayesh Chaudhari}\\[4pt]
+    {\large\color{accent}\bfseries Data Engineer}\\[6pt]
+    \textcolor{midgray}{\small
+        \faMapMarker*\ Pune, Maharashtra \quad
+        \faPhone\ +91-94052-76764 \quad
+        \faEnvelope\ \href{mailto:chaudharij1503@gmail.com}{chaudharij1503@gmail.com}
+    }\\[3pt]
+    \textcolor{midgray}{\small
+        \faLinkedin\ \href{https://linkedin.com/in/jchau1503}{linkedin.com/in/jchau1503} \quad
+        \faGithub\ \href{https://github.com/jayeshchaudha}{github.com/jayeshchaudha} \quad
+        \faGlobe\ \href{https://jayeshchaudha.github.io}{jayeshchaudha.github.io}
+    }
+\end{center}
+
+\vspace{2pt}
+\noindent\textcolor{rulecol}{\rule{\linewidth}{0.8pt}}
+\vspace{2pt}
+
+%% ── PROFESSIONAL SUMMARY ─────────────────────────────────────
+\section{Professional Summary}
+
+\textcolor{midgray}{
+Data Engineer with \textbf{4+ years} of experience in data pipelines, analytics engineering,
+and business intelligence across \textbf{energy, manufacturing, and retail domains}.
+Electrical Engineering background combined with enterprise-level data work at
+\textbf{Enbridge (Fortune 500, Canada)} gives rare domain depth --- uniquely positioned
+for \textbf{industrial IoT, energy analytics, and cloud pipeline} roles.
+Proven delivery: \textbf{98\%+ data accuracy} on 100+ monthly validations, \textbf{40\%}
+reduction in manual reporting effort, and end-to-end SQL and Python pipeline development.
+Certified in \textbf{Azure (DP-203)} and \textbf{Databricks}; experienced with
+PySpark, Airflow, Snowflake, and DBT.
+}
+
+%% ── TECHNICAL SKILLS ─────────────────────────────────────────
+\section{Technical Skills}
+
+\skillrow{Languages}{Python (Pandas, NumPy, openpyxl), SQL (Advanced), VBA (Intermediate), Bash (Basic)}
+\skillrow{Data Engineering}{Apache Airflow, PySpark, DBT Core, ETL pipeline design, incremental loads, data modelling}
+\skillrow{Cloud --- Azure}{Azure Data Factory, Azure Data Lake Storage Gen2, Azure Synapse Analytics, Azure Databricks}
+\skillrow{Warehousing}{Snowflake, Delta Lake, PostgreSQL, MySQL, star schema / SCD design}
+\skillrow{Streaming}{Apache Kafka (producers/consumers), Azure Event Hubs (awareness)}
+\skillrow{Data Quality}{Great Expectations, schema validation, data reconciliation, audit trail design}
+\skillrow{BI \& Reporting}{Power BI (DAX, data modelling), Excel (Advanced --- pivot tables, Power Query, VBA)}
+\skillrow{DevOps}{Git, GitHub Actions, Docker (basic), Terraform (basic)}
+\skillrow{Domain}{Energy DSM data, electrical systems QC, manufacturing KPIs (OEE), IoT sensor data}
+\skillrow{Enterprise}{SAP, CRM platforms, A/P batch processing, vendor data management}
+
+%% ── WORK EXPERIENCE ──────────────────────────────────────────
+\section{Work Experience}
+
+%% -- Job 1 --
+\jobentry{DSM Tracking \& Reporting Analyst}{Enbridge Inc.}%
+    {Jan 2024 -- Feb 2026}{Toronto, Canada \ \textbar\ Energy Sector \textbar\ Fortune 500 \textbar\ Remote}
+
+\begin{itemize}
+    \item Designed and maintained \textbf{data validation pipelines} for 100+ monthly DSM projects
+    and customer incentive payments --- achieved \textbf{98\%+ accuracy} across all submissions.
+    \item Built \textbf{Excel/VBA automated dashboards} for senior management, cutting report
+    generation time by \textbf{35\%} and eliminating 8+ hours of manual weekly effort.
+    \item Processed and reconciled \textbf{CRM and A/P batch data} for 50+ vendors monthly ---
+    validated equipment eligibility across \textbf{200+ annual projects} with 100\% audit compliance.
+    \item Resolved \textbf{50+ monthly data discrepancies} between CRM platforms and financial
+    systems, reducing DNQ (Did Not Qualify) claims and protecting shareholder payouts.
+    \item Engineered data quality rules and lookup validation logic to catch payment errors
+    pre-submission --- reduced rework rate by an estimated \textbf{25\%}.
+\end{itemize}
+
+\vspace{3pt}
+
+%% -- Job 2 --
+\jobentry{Junior Data Analyst}{NPower Canada}{May 2023 -- Aug 2023}%
+    {Toronto, Canada \textbar\ Data Analytics Program}
+
+\begin{itemize}
+    \item Built \textbf{automated SQL reporting pipelines} reducing manual reporting time by
+    \textbf{40\%}; performed statistical analysis and EDA on real-world datasets.
+    \item Delivered findings and business recommendations to stakeholders --- practised
+    translating raw data into decisions, a skill applied directly in pipeline design.
+\end{itemize}
+
+\vspace{3pt}
+
+%% -- Job 3 --
+\jobentry{Quality Engineer}{Mass-Tech Controls Pvt. Ltd.}{2018 -- 2019}%
+    {Jalgaon, Maharashtra \textbar\ Electrical Systems Manufacturing}
+
+\begin{itemize}
+    \item Tested and analysed \textbf{DC systems, rectifiers, switchgear, and inverters} against
+    quality standards --- maintained \textbf{100\% QC compliance} documentation.
+    \item Conducted root cause analysis on equipment failures --- built systematic debugging
+    mindset now applied to pipeline failures and data quality investigations.
+\end{itemize}
+
+%% ── PROJECTS ─────────────────────────────────────────────────
+\section{Projects}
+
+%% -- Project 1 --
+\projectentry{Energy DSM Pipeline --- Azure End-to-End DE Project}%
+    {Python $\cdot$ Azure Data Factory $\cdot$ ADLS Gen2 $\cdot$ Snowflake $\cdot$ Airflow}%
+    {https://github.com/jayeshchaudha/energy-dsm-pipeline}
+
+\begin{itemize}
+    \item Built a cloud pipeline simulating Enbridge-style DSM project data flows:
+    raw CSV ingestion $\rightarrow$ Azure Data Lake Gen2 $\rightarrow$ Python transformation
+    (PySpark) $\rightarrow$ Snowflake $\rightarrow$ Power BI --- processing \textbf{500K+
+    records} per run.
+    \item Implemented \textbf{Great Expectations} data quality checks (null validation, value
+    range checks, schema enforcement) with \textbf{Airflow DAG} orchestration and email
+    alerts on failure.
+    \item Applied real domain knowledge from Enbridge --- DSM eligibility rules, vendor
+    lookup validation, and audit trail logging built directly into the pipeline.
+\end{itemize}
+
+\vspace{2pt}
+
+%% -- Project 2 --
+\projectentry{E-Commerce SQL Analytics --- Business Intelligence Pipeline}%
+    {SQL $\cdot$ Python $\cdot$ PostgreSQL $\cdot$ Power BI}%
+    {https://github.com/jayeshchaudha/E-commerce-SQL-Analysis}
+
+\begin{itemize}
+    \item Designed \textbf{5 business-driven SQL analyses} on UCI Online Retail Dataset
+    (500K+ transactions): revenue trends, customer lifetime value, \textbf{RFM segmentation},
+    cancellation analysis, and geographic distribution.
+    \item Structured queries as modular, reusable CTEs --- mirroring a \textbf{DBT project
+    layout} with staging, intermediate, and mart layers; loaded results into PostgreSQL and
+    visualised in Power BI.
+    \item Documented business questions, query logic, and findings structured for
+    stakeholder presentation.
+\end{itemize}
+
+\vspace{2pt}
+
+%% -- Project 3 --
+\projectentry{DBT + Snowflake Analytics Engineering Project}%
+    {DBT $\cdot$ Snowflake $\cdot$ Python $\cdot$ Airflow $\cdot$ Great Expectations}%
+    {https://github.com/jayeshchaudha/dbt-snowflake-analytics}
+
+\begin{itemize}
+    \item Built a complete \textbf{DBT project} on Snowflake transforming raw retail event
+    data into a star schema --- fact tables, dimension tables, business metrics, and
+    automated data tests.
+    \item Orchestrated DBT runs via \textbf{Airflow DAG} with Great Expectations pre-checks
+    and Slack failure alerts; published full \textbf{data lineage} via DBT docs on GitHub Pages.
+    \item Implemented \textbf{SCD Type 2} for customer dimension --- tracks historical changes
+    without data loss.
+\end{itemize}
+
+%% ── CERTIFICATIONS ───────────────────────────────────────────
+\section{Certifications}
+
+\certentry{Microsoft Azure Data Engineer Associate (DP-203)}{Microsoft}{2025}
+\certentry{Databricks Certified Data Engineer Associate}{Databricks}{2025}
+\certentry{Snowflake SnowPro Core Certification}{Snowflake}{2025}
+\certentry{Microsoft Azure Fundamentals (AZ-900)}{Microsoft}{Jul 2023}
+\certentry{IBM Data Analyst Professional Certificate}{IBM / Coursera}{Aug 2023}
+
+%% ── EDUCATION ────────────────────────────────────────────────
+\section{Education}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{darkgray} Graduate Certificate, Project Management} \textcolor{lightgray}{|}
+    \textcolor{accent}{Algonquin College, Ottawa, Canada}
+    & \textcolor{lightgray}{\small Sep 2021 -- May 2022} \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{darkgray} Graduate Certificate, Energy Management} \textcolor{lightgray}{|}
+    \textcolor{accent}{Algonquin College, Ottawa, Canada}
+    & \textcolor{lightgray}{\small Jan -- Sep 2021} \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries\color{darkgray} B.E., Electrical Engineering} \textcolor{lightgray}{|}
+    \textcolor{accent}{Amravati University, Maharashtra}
+    & \textcolor{lightgray}{\small 2013 -- 2017} \\
+    \textcolor{midgray}{\small Relevant: Signals \& Systems, Control Systems,
+    Electrical Machines, C Programming}
+    & \\
+\end{tabularx}
+
+%% ── ACHIEVEMENTS ─────────────────────────────────────────────
+\section{Achievements \& Activities}
+
+\begin{itemize}
+    \item \textbf{Technical Writing:} Published articles on Medium covering Azure pipeline
+    design, Airflow DAG patterns, and energy data engineering --- targeted at the
+    DE community.
+    \item \textbf{Open Source:} Active GitHub contributor --- all projects include full
+    README, architecture diagrams, and sample datasets for reproducibility.
+    \item \textbf{Community:} Active member, Pune Data Engineering and Analytics meetup
+    group --- regularly attends sessions on cloud DE and MLOps.
+    \item \textbf{Domain Edge:} Only candidate profile combining Fortune 500 energy sector
+    experience (Enbridge) + Electrical Engineering + cloud DE certifications in the
+    Pune job market.
+\end{itemize}
+
+%% ── FOOTER ───────────────────────────────────────────────────
+\vspace{4pt}
+\noindent{\bfseries\color{darkgray}\small Languages:}
+\textcolor{midgray}{\small English (Fluent), Hindi (Native), Marathi (Native)}
+\hfill
+{\bfseries\color{darkgray}\small Open to:}
+\textcolor{midgray}{\small Pune \textbar\ Remote \textbar\ Hybrid}
+
+\end{document}
