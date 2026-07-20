@@ -2,11 +2,11 @@
 -- employee info -- need order id, customer name, sales, price, and salesperson name
 
 -- peek at each table first to see what i'm working with
-SELECT * FROM customers;
-SELECT * FROM employees;
-SELECT * FROM orders;
-SELECT * FROM ordersarchive;
-SELECT * FROM products;
+SELECT * FROM sales.customers;
+SELECT * FROM sales.employees;
+SELECT * FROM sales.orders;
+SELECT * FROM sales.ordersarchive;
+SELECT * FROM sales.products;
 
 SELECT
     o.orderid,
